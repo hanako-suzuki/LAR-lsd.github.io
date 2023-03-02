@@ -23,7 +23,7 @@ const ctx = canvas.getContext("2d");
 const promise = navigator.mediaDevices.getUserMedia(medias);
 const textArea = document.getElementById("textArea");
 
-import LSD from './lsd';
+import {LSD} from './lsd';
 
 promise.then(successCallback)
        .catch(errorCallback);
