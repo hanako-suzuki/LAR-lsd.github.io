@@ -1101,11 +1101,11 @@ class LSD {
    * @return {Uint8ClampedArray}
    */    
   gaussianBlur(imageData, kSize, sigma) {
-      let width = this.width,
-          height = this.height,
+      let width = ctx.width,
+          height = ctx.height,
           src = imageData,
           // ctx = document.createElement('canvas').getContext('2d'),
-          // tmp = ctx.createImageData(width, height),
+          tmp = ctx.createImageData(width, height),
           dst = null,
           kernel = this.getGaussianKernel(kSize, sigma),
           r = (kSize - 1) / 2;
