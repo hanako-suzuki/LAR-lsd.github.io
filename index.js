@@ -1104,8 +1104,8 @@ class LSD {
       let width = this.width,
           height = this.height,
           src = imageData,
-          ctx = document.createElement('canvas').getContext('2d'),
-          tmp = ctx.createImageData(width, height),
+          // ctx = document.createElement('canvas').getContext('2d'),
+          // tmp = ctx.createImageData(width, height),
           dst = null,
           kernel = this.getGaussianKernel(kSize, sigma),
           r = (kSize - 1) / 2;
